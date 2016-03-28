@@ -1,9 +1,44 @@
-html{
-	height: 100%; 
-	overflow: hidden;
+/*css reset chris coyier*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.home{
+/*clearfix paul irish*/
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/*global styles*/
+.centerme {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.home {
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100%;
@@ -11,7 +46,7 @@ html{
   overflow-x: auto;
 }
 
-.slide:before{
+.slide:before {
   content: " ";
   position: absolute;
   top: 0;
@@ -21,7 +56,7 @@ html{
   background: 50% 50% / cover;
 }
 
-.slide{
+.slide {
   position: relative;
   padding: 25vh 10%;
   min-height: 100vh;
@@ -31,69 +66,68 @@ html{
 }
 
 .slide p,
-.slide figure{
+.slide figure {
   position: relative;
   z-index: -1;
 }
 
-.slide p{
+.slide p {
   transform: translateZ(0.2px) scale(0.8);
   width: 25%;
   float: left;
 }
 
-.slide figure{
-	transform: translateZ(-0.4px) scale(1.4);
-    float: right;
+.slide figure {
+  transform: translateZ(-0.4px) scale(1.4);
+  float: right;
 }
 
-#title{
-	background-image: url('http://placehold.it/1024x768/ffff00');
-	background-attachment: fixed;
+#title {
+  background-image: url("http://placehold.it/1024x768/ffff00");
+  background-attachment: fixed;
 }
 
-#slide1:before{
+#slide1:before {
   background-image: url("http://placehold.it/1024x768/00ff00");
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
 
-#slide2{
+#slide2 {
   background-image: url("http://placehold.it/1024x768");
   background-attachment: fixed;
 }
 
-#slide3:before{
+#slide3:before {
   background-image: url("http://placehold.it/1024x768/0000ff");
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
 
-#slide4{
+#slide4 {
   background-image: url("http://placehold.it/1024x768/ff0000");
   background-attachment: fixed;
 }
 
-#slide5:before{
+#slide5:before {
   background-image: url("http://placehold.it/1024x768/0000ff");
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
 
-#slide6{
+#slide6 {
   background-image: url("http://placehold.it/1024x768/ff0000");
   background-attachment: fixed;
 }
 
-.main-head{
-	font-family: 'Nosifer', cursive;
+.main-head {
+  font-family: 'Nosifer', cursive;
 }
 
-.body-text{
-	font-family: 'Khula', sans-serif;
+.body-text {
+  font-family: 'Khula', sans-serif;
 }
 
-.time-stamp{
-	font-family: 'Tienne', serif;
+.time-stamp {
+  font-family: 'Tienne', serif;
 }
-

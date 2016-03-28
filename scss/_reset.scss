@@ -1,0 +1,35 @@
+ /*css reset chris coyier*/
+*, 
+*:before, 
+*:after{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*clearfix paul irish*/
+.clearfix:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+ /*global styles*/
+
+.centerme{
+	text-align: center; 
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.hide{
+	display: none;
+}
