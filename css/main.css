@@ -65,69 +65,107 @@ html {
   background: 50% 50% / cover;
 }
 
-.slide p,
-.slide figure {
+.slide p {
   position: relative;
-  z-index: -1;
+  z-index: 1;
+  margin-top: 50px;
 }
 
 .slide p {
   transform: translateZ(0.2px) scale(0.8);
-  width: 25%;
-  float: left;
-}
-
-.slide figure {
-  transform: translateZ(-0.4px) scale(1.4);
-  float: right;
+  text-align: left;
 }
 
 #title {
-  background-image: url("http://placehold.it/1024x768/ffff00");
+  background-color: #993333;
   background-attachment: fixed;
+  color: white;
+  text-align: center;
 }
 
 #slide1:before {
-  background-image: url("http://placehold.it/1024x768/00ff00");
+  background-image: url("../img/breakroom.png");
+  background-color: #ffeee6;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
 
 #slide2 {
-  background-image: url("http://placehold.it/1024x768");
+  background-color: #0086b3;
   background-attachment: fixed;
 }
 
 #slide3:before {
-  background-image: url("http://placehold.it/1024x768/0000ff");
+  background-image: url("../img/microwave.png");
+  background-color: #ffeee6;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
 
 #slide4 {
-  background-image: url("http://placehold.it/1024x768/ff0000");
+  background-color: #cc0000;
   background-attachment: fixed;
 }
 
 #slide5:before {
-  background-image: url("http://placehold.it/1024x768/0000ff");
+  background-image: url("../img/helen-scene.png");
+  background-color: #ffeee6;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
 
 #slide6 {
-  background-image: url("http://placehold.it/1024x768/ff0000");
+  background-color: #666699;
+  background-attachment: fixed;
+}
+
+#slide7:before {
+  background-image: url("../img/lean-cuisine.png");
+  background-color: #ffeee6;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+#slide8 {
+  background-color: #3366ff;
+  background-attachment: fixed;
+}
+
+#slide9:before {
+  background-image: url("../img/popcorn.png");
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+#slide11 {
+  background-image: url("../img/popcorn.png");
+  transform: translateZ(-3px) scale(2);
+  z-index: 2;
+}
+
+#slide10 {
+  background-color: #339966;
   background-attachment: fixed;
 }
 
 .main-head {
   font-family: 'Nosifer', cursive;
+  font-size: 300%;
+  text-align: center;
+  line-height: 120px;
 }
 
 .body-text {
   font-family: 'Khula', sans-serif;
+  text-align: center;
+  width: 70%;
+  font-size: 120%;
+  margin: 0 auto;
+  color: white;
 }
 
 .time-stamp {
   font-family: 'Tienne', serif;
+  font-size: 200%;
+  color: white;
 }
